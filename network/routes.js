@@ -1,10 +1,12 @@
 import product from '../routes/productRoute.js'
-import user from '../routes/userRoute.js'
+import staff from '../routes/staffRoute.js'
 import login from '../routes/loginRoute.js'
+import user from '../routes/userRoute.js'
 
 const routes = (server) =>{
     server.use('/product', product),
-    server.use('/user', user),
-    server.use('/login', login)
+    server.use('/staff', staff),
+    server.use('/login', login),
+    server.use('/user', user)
 }
 export default routes;

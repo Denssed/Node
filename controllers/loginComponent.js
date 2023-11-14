@@ -19,7 +19,7 @@ const db = getFirestore(firebase);
 //Post
 const loginUser = async (req, res, next) => {
   try {
-    const docs = await getDocs(collection(db, "users"));
+    const docs = await getDocs(collection(db, "staff"));
     let user;
     docs.forEach((doc) => {
       if (doc.data().email === req.body.email) user = doc;

@@ -11,7 +11,7 @@ import { verifyToken } from '../network/validateToken.js';
 
 const router = express.Router();
 
-router.get('/', verifyToken, getUsers);
+router.get('/', getUsers);
 router.post('/new', createUser);
 router.get('/:id', getUser);
 router.patch('/:id', updateUser);
