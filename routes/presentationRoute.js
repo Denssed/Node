@@ -7,7 +7,7 @@ import {
   updatePresentation,
   deletePresentation,
 } from '../controllers/presentationController.js';
-import { verifyToken } from '../network/validateToken.js';
+import { verifyToken } from '../network/verifyToken.js';
 
 const router = express.Router();
 

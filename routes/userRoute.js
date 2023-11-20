@@ -7,7 +7,7 @@ import {
   updateUser,
   deleteUser,
 } from '../controllers/userController.js';
-import { verifyToken } from '../network/validateToken.js';
+import { verifyToken } from '../network/verifyToken.js';
 
 const router = express.Router();
 

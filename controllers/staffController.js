@@ -27,6 +27,8 @@ const createStaff = async (req, res, next) => {
     const hash  = await bcrypt.hash(req.body.password, salt);
 
     const staff = {
+      name: req.body.name,
+      lastName: req.body.lastName,
       email: req.body.email, 
       password: hash, 
       role: req.body.role};
@@ -52,6 +54,8 @@ const getStaff = async (req, res, next) => {
       staff.forEach((doc) => {
         const staff = new Staff(
           doc.id,
+          doc.data().name,
+          doc.data().lastName,
           doc.data().email,
           doc.data().role
         );
@@ -75,6 +79,8 @@ const getPersonal = async (req, res, next) => {
 
     const staffData = new Staff(
       staff.id,
+      staff.data().name,
+      staff.data().lastName,
       staff.data().email,
       staff.data().role
     );

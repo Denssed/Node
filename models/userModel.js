@@ -1,9 +1,9 @@
 
 class User {
-  constructor(id, name, surName, phone, email, dob, civilState, profesion, address, isBaptized) {
+  constructor(id, name, lastName, phone, email, dob, civilState, profesion, address, isBaptized) {
       (this.id = id),
       (this.name = name),
-      (this.surName = surName),
+      (this.lastName = lastName),
       (this.phone = phone),
       (this.email = email),
       (this.dob = dob),

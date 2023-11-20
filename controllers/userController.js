@@ -38,7 +38,7 @@ const getUsers = async (req, res, next) => {
         const user = new User(
           doc.id,
           doc.data().name,
-          doc.data().surName,
+          doc.data().lastName,
           doc.data().phone,
           doc.data().email,
           doc.data().dob,
@@ -66,7 +66,7 @@ const getUser = async (req, res, next) => {
     const userData = new User(
       user.id,
       user.data().name,
-      user.data().surName,
+      user.data().lastName,
       user.data().phone,
       user.data().email,
       user.data().dob,

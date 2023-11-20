@@ -7,11 +7,12 @@ import {
   updateStaff,
   deleteStaff,
 } from '../controllers/staffController.js';
-import { verifyToken } from '../network/validateToken.js';
+import { verifyToken } from '../network/verifyToken.js';
 
 const router = express.Router();
 
-router.get('/', verifyToken, getStaff);
+// router.get('/', verifyToken, getStaff);
+router.get('/', getStaff);
 router.post('/new', createStaff);
 router.get('/:id', getPersonal);
 router.patch('/:id', updateStaff);
