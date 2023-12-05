@@ -38,7 +38,7 @@ const getBaptisms = async (req, res, next) => {
         const baptism = new Baptism(
           doc.id,
           doc.data().name,
-          doc.data().surName,
+          doc.data().lastName,
           doc.data().pof,
           doc.data().age
         );
@@ -61,7 +61,7 @@ const getBaptism = async (req, res, next) => {
     const baptismData = new Baptism(
       baptism.id,
       baptism.data().name,
-      baptism.data().surName,
+      baptism.data().lastName,
       baptism.data().pof,
       baptism.data().age
     );
