@@ -11,7 +11,7 @@ const verifyToken = (req, res, next) => {
     }
 
     try {
-        const verified = jwt.verify(token, process.env.TOKEN_SECRET)
+        const verified = jwt.verify(token, "testtoken")
         // console.log("req",req.role)
         // console.log("verified",verified.email)
         // console.log("verified ROLE",verified.role.admin)

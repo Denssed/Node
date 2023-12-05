@@ -12,6 +12,6 @@ app.use(express.json());
 
 router(app)
 
-app.listen(config.port, () =>
-  console.log(`Server is live @ ${config.hostUrl}`),
+app.listen(5000, () =>
+  console.log(`Server is live @ ${5000}`),
 );
