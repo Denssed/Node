@@ -1,9 +1,9 @@
 
 class Presentation {
-  constructor(id, nameFather, phonePather, nameMother, phoneMother, nameChild, childPhoto, godParent, minister, date) {
+  constructor(id, nameFather, phoneFather, nameMother, phoneMother, nameChild, childPhoto, godParent, minister, date) {
       (this.id = id),
       (this.nameFather = nameFather),
-      (this.phonePather = phonePather),
+      (this.phoneFather = phoneFather),
       (this.nameMother = nameMother),
       (this.phoneMother = phoneMother),
       (this.nameChild = nameChild),
