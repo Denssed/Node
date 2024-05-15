@@ -43,12 +43,8 @@ const loginUser = async (req, res, next) => {
       {expiresIn: '1h'}
     );
 
-    // res.header("auth-token", token).json({
-    //   error: null,
-    //   data: { token },
-    // });
 
-    return success(req, res, token, 200 );
+    return success(req, res, {token: token, role: user.data().role}, 200 );
   } catch (error) {
     res.status(400).send(error.message);
   }
